@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="customTabs">
+
+  <head>
+   
+   <script data-require="jquery@>=1.9.1 <3" data-semver="2.1.4" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script data-require="angular.js@1.4.8" data-semver="1.4.8" src="https://code.angularjs.org/1.4.8/angular.js"></script>
+  <link data-require="bootstrap@*" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+   <ng-tab>
+     <tab heading="Tab 1">
+       <p>This is Content of Tab 1</p>
+     </tab>
+     <tab heading="Tab 2" active="true">
+       <p>This is Content of Tab 2</p>
+     </tab>
+   </ng-tab>
+
+  </body>
+
+</html>

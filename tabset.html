@@ -1,0 +1,15 @@
+<!--tabWrap-->
+
+<div role="tabpanel">
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation"
+      ng-repeat="tab in tabWrap.tabs" ng-class="{'active': tab.active}">
+      
+      <a href="" role="tab"
+        ng-click="tabWrap.select(tab)">{{tab.heading}}</a>
+    </li>
+  </ul>
+  
+  <ng-transclude></ng-transclude> 
+  
+</div>
